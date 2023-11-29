@@ -8,16 +8,90 @@ body {
     font-size: 15px;
 }
 
-.container {
-    width: 800px;
-    background-color: #ffffff;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 40px;
-    box-shadow: black 0px 5px 10px;
-    text-align: center;
-    letter-spacing: 8px;
-    font-size: 50px;
-    padding-top: 20px;
+.container{
+    display: inline-block;
+    font-family: "arial";
+    font-size: 24px;
+  }
+  
+  .typed {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    animation: typing;
+    animation-duration: 2s;
+    animation-timing-function: steps(20, end);
+    animation-fill-mode: forwards;
+    color:#00ff00;
+    font-family: 'Lucida Console', Monaco, monospace;
+    font-size: 15px;
+  }
+
+  .paused {
+    animation-play-state: paused;
+  }
+    
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  } 
+
+
+
+.command1 {
+    color:#00ff00;
+    font-family: 'Lucida Console', Monaco, monospace;
+    font-size: 15px;
+}
+.command2 {
+    color:#00ff00;
+    font-family: 'Lucida Console', Monaco, monospace;
+    font-size: 15px;
+}
+.command3 {
+    color:#00ff00;
+    font-family: 'Lucida Console', Monaco, monospace;
+    font-size: 15px;
+}
+.commandblock {
+    color:#00ff00;
+    font-family: 'Lucida Console', Monaco, monospace;
+    font-size: 15px;
+}
+
+.py-overlay {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  color: rgb(255, 255, 255);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  transition: opacity 1000ms !important;
+  visibility: visible !important;
+  color: hidden !important;
+  opacity: 0 !important;
+}
+
+#eue {
+  margin-top: 40px;
+  letter-spacing: 8px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: black 0px 5px 10px;
+}
+
+#imgeue {
+    
+  filter: hue-rotate(125deg);
+}
+
+.cheader {
+  color:#00ff00;
+    font-family: 'Lucida Console', Monaco, monospace;
+    font-size: 30px;
 }
