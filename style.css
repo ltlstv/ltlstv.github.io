@@ -9,11 +9,43 @@ body {
 }
 
 .container{
+    background-color: #000000;
+    max-width: 100%;
     display: inline-block;
     font-family: "arial";
     font-size: 24px;
   }
   
+.main {
+  background-color: #000000;
+  max-width: 100%;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+}
+
+.background-image{
+  position: fixed;
+  max-width: 100%;
+  height: 100%;
+  left:0;
+  right:0;
+  top:0;
+  background-blend-mode: saturation;
+  flex-direction: column;
+}
+
+.gradient {
+  width: 100%;
+  height: 5%;
+  position: relative;
+  background: rgb(0,0,0);
+  background: linear-gradient(180deg, rgba(2,0,36,0) 0%, rgba(0,0,0,1) 100%), url('./img/bg_main.gif');
+  filter: hue-rotate(125deg);
+  opacity: 1;
+  bottom:0;
+}
+
   .typed {
     overflow: hidden;
     white-space: nowrap;
@@ -94,4 +126,8 @@ body {
   color:#00ff00;
     font-family: 'Lucida Console', Monaco, monospace;
     font-size: 30px;
+}
+
+#background-div {
+  background-image: './img/bg_main.gif';
 }
