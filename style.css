@@ -133,3 +133,18 @@ body {
 #background-div {
   background-image: './img/bg_main.gif';
 }
+
+.form-control {
+  width: 100%;
+  background-color: #000000;
+  border-color: #00ff00;
+  border-radius: 0;
+  color: #00ff00;
+}
+
+#buttonRequestWhitelist {
+  background-color: #00ff00;
+  color: #000000;
+  font-family: 'Lucida Console', Monaco, monospace;
+  font-size: 15px;
+}
